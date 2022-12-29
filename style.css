@@ -270,6 +270,9 @@
     .services-grid {
     grid-template-columns: repeat(1, 1fr);
     }
+
+      
+    
 }
 
 form {
@@ -302,9 +305,10 @@ form {
   }
   
   form button[type="submit"] {
-    background-color: #333;
+    background-color: #00b894;
     color: #fff;
     border: none;
+    width: 100%;
     font-size: 1.6rem;
     font-weight: 700;
     padding: 1rem 2rem;
@@ -313,11 +317,11 @@ form {
   }
   
   form button[type="submit"]:hover {
-    background-color: #444;
+    background-color: #00ccad;
   }
   
   form button[type="submit"]:active {
-    background-color: #222;
+    background-color: #00b894;
   }
   
 
@@ -393,7 +397,8 @@ form {
   }
   
   footer .copyright p {
-    margin: 0;
+    margin: 16px;
+
     font-size: 1.4rem;
   }
   
@@ -407,16 +412,35 @@ form {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+  }
+
   footer .logo {
     padding: 16px;
     width: 100%;
-    justify-content: center;
-    display: grid;
   }
+
+  footer .logo h3 {
+    text-align: center;
+  }
+
+
+  footer hr {
+    width: 90%;
+    color: white;
+}
+
 
   
   .footer-logo{
     width: 90%;
+    margin: 16px;
 }
 
   footer .contact {
