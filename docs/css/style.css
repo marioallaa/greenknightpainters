@@ -1,0 +1,463 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set base font size and font family */
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+
+
+
+  /* Set up header and navigation */
+  header {
+    background-color: #00b893af;
+    color: #fff;
+    width: 100%;
+
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  display: flex;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .home .content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  }
+  
+    
+    .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: black;
+    }
+    
+    .hero p {
+    color: black;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    }
+    
+    .cta {
+      display: inline-block;
+      background-color: #00b894;
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 500;
+      }
+
+    /* Set up general styles for sections */
+    section {
+        padding: 4rem 2rem;
+        }
+    /* Set up general styles for sections */
+    section.home {
+    padding: 0rem 0rem;
+    }
+    
+    section h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    }
+    
+    /* Set up gallery section */
+    .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    }
+    
+    .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    }
+    
+    .project h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    }
+    
+    /* Set up testimonials section */
+    .testimonial {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    }
+    
+    .testimonial p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    }
+    
+    .testimonial p em {
+    font-style: italic;
+    color: #666;
+    }
+    
+    /* Set up contact section */
+    #contact ul {
+    list-style: none;
+    margin-bottom: 2rem;
+    }
+    
+    #contact li {
+    margin-bottom: 1rem;
+    }
+    
+    #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    
+    #contact label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    }
+    
+    #contact input[type="text"], #contact textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    }
+    
+    #contact input[type="submit"] {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    }
+
+    
+/* Responsive styles */
+@media (max-width: 768px) {
+/* Stack navigation links vertically on small screens */
+    nav ul {
+    flex-direction: column;
+    }
+    
+    nav li {
+    margin: 1rem 0;
+    }
+    
+    /* Make gallery images full width on small screens */
+    .project-grid {
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+#services {
+    padding: 4rem 2rem;
+  }
+  
+  #services h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+  
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 16px;
+    border-radius: 5px
+
+  }
+  
+  .service img {
+    width: 100%;
+    height: auto;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 5px;
+  }
+  
+  .service h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+  
+  .service p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #00b894;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    }
+    
+    .button:hover {
+    background-color: #00ccad;
+    transform: translateY(-2px);
+    }
+    
+    /* Responsive styles */
+@media (max-width: 768px) {
+    /* Stack services vertically on small screens */
+    .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+      
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+  }
+  
+  form label {
+    margin-top: 1rem;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #00b894;
+    font-size: 1.6rem;
+    outline: none;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  form textarea {
+    height: 10rem;
+    resize: none;
+  }
+  
+  form button[type="submit"] {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #00ccad;
+  }
+  
+  form button[type="submit"]:active {
+    background-color: #00b894;
+  }
+  
+
+
+  footer {
+    background-color: #00b894;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  footer .container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  footer .logo {
+    width: 40%;
+  }
+  footer .contact {
+    width: 30%;
+  }
+  footer .menu {
+    width: 20%;
+  }
+  
+  footer h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  
+  .footer-logo{
+      width: 60%;
+  }
+
+  footer hr {
+      width: 50%;
+      color: white;
+  }
+
+  footer p,
+  footer ul {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer li {
+    margin: 0.5rem 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #ccc;
+  }
+  
+  footer .copyright {
+    background-color: #00a080;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  footer .copyright p {
+    margin: 16px;
+
+    font-size: 1.4rem;
+  }
+  
+
+    /* Responsive styles */
+@media (max-width: 768px) {
+  /* Stack services vertically on small screens */
+  footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+  }
+
+  footer .logo {
+    padding: 16px;
+    width: 100%;
+  }
+
+  footer .logo h3 {
+    text-align: center;
+  }
+
+
+  footer hr {
+    width: 90%;
+    color: white;
+}
+
+
+  
+  .footer-logo{
+    width: 90%;
+    margin: 16px;
+}
+
+  footer .contact {
+    padding: 16px;
+    width: 100%;
+  }
+  footer .menu {
+    padding: 16px;
+    width: 100%;
+  }
+}
