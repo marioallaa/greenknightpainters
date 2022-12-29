@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav li {
+  margin-left: 1rem;
+}
+
+header nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #666;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.7rem;
+}
+
+section p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+.cta:hover {
+  background-color: #444;
+}
+
+.cta:active {
+  background-color: #222;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columns > div {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.columns img {
+  max-width: 100%;
+}
+
+.testimonial {
+  background-color: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial .author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial .author img {
+  border-radius: 50%;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.testimonial .author .name {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+form label {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+form textarea {
+  height: 10rem;
+  resize: none;
+}
+
+form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #444;
+}
+
+form button[type="submit"]:active {
+  background-color: #222;
+}
+
+@media (min-width: 600px) {
+  .columns {
+    display: flex;
+  }
+  .columns > div {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .columns {
+    display: flex;
+  }
+  .columns > div {
+    width: 33.333%;
+  }
+}
