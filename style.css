@@ -23,10 +23,11 @@
   header {
     background-color: #00b893af;
     color: #fff;
+    width: 100%;
   }
   
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
   }
@@ -328,6 +329,7 @@ form {
   }
   
   footer .container {
+    
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -395,3 +397,34 @@ form {
     font-size: 1.4rem;
   }
   
+
+    /* Responsive styles */
+@media (max-width: 768px) {
+  /* Stack services vertically on small screens */
+  footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer .logo {
+    padding: 16px;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+  }
+
+  
+  .footer-logo{
+    width: 90%;
+}
+
+  footer .contact {
+    padding: 16px;
+    width: 100%;
+  }
+  footer .menu {
+    padding: 16px;
+    width: 100%;
+  }
+}
